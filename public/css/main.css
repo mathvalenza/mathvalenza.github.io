@@ -67,6 +67,8 @@ ul {
   color: #999;
 }
 
-.contact__item a:hover {
+.contact__item a:hover i {
   color: #333;
+  transform: translateY(-10px);
+  transition: all 0.2s;
 }
