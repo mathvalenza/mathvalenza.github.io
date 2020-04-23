@@ -7,8 +7,12 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
-  justify-content: center;
   overflow-x: hidden;
+  justify-content: start;
+}
+
+.avatar {
+  height: 400px;
 }
 
 .info {
@@ -45,7 +49,7 @@ ul {
 .contact {
   position: absolute;
   bottom: 0;
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
 .contact__list {
@@ -55,7 +59,7 @@ ul {
 }
 
 .contact__item {
-  font-size: 2.2rem;
+  font-size: 42px;
   margin: 0 40px;
 }
 
