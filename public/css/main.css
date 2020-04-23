@@ -2,25 +2,28 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.container {
+.page {
   align-content: center;
   flex-direction: column;
   display: flex;
   height: 100vh;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .info {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   font-size: 2rem;
   color: #ccc;
 }
 
-.info ul {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+ul {
   display: flex;
   list-style: none;
   margin: 0;
@@ -31,4 +34,25 @@ body {
   color: #333;
   margin: 0 10px;
   font-weight: bold;
+}
+
+.info__item:hover {
+  color: #777;
+  cursor: default;
+}
+
+.contact {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+
+.contact__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__item {
+  margin: 0 10px;
 }
