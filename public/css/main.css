@@ -1,3 +1,9 @@
+/* // TODO: organizar props css alfabeticamente
+// TODO: organizar CSS
+// TODO: adicionar ícone para a page */
+/* proximo commit: 'fixed mobile version' */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
 body {
   background-color: #dedede;
   font-family: 'Open Sans', sans-serif;
@@ -7,9 +13,9 @@ body {
   align-content: center;
   flex-direction: column;
   display: flex;
-  height: 100vh;
-  overflow-x: hidden;
-  justify-content: start;
+  height: 95vh;
+  width: 100vw;
+  justify-content: center;
 }
 
 .avatar {
@@ -17,7 +23,7 @@ body {
 }
 
 .avatar img {
-  height: 400px;
+  height: 200px;
 }
 
 .avatar:hover .overlay {
@@ -26,10 +32,6 @@ body {
 
 .avatar:hover .avatar__img {
   opacity: 0;
-}
-
-.avatar__img {
-  display: block;
 }
 
 .overlay {
@@ -42,9 +44,31 @@ body {
 }
 
 .info {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #ccc;
   text-align: center;
+  width: 100%;
+  padding-bottom: 120px;
+}
+
+@media screen and (min-width: 459px) {
+  .info {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .info__item {
+    margin: 0 20px;
+  }
+
+  .contact__item {
+    font-size: 42px;
+    margin: 0 40px;
+  }
+
+  .avatar img {
+    height: 300px;
+  }
 }
 
 .container {
@@ -63,7 +87,7 @@ ul {
 
 .info__item {
   color: #333;
-  margin: 0 20px;
+  margin: 0 10px;
   font-weight: bold;
 }
 
@@ -85,8 +109,8 @@ ul {
 }
 
 .contact__item {
-  font-size: 42px;
-  margin: 0 40px;
+  font-size: 52px;
+  margin: 0 20px;
 }
 
 .contact__item a {
@@ -97,4 +121,8 @@ ul {
   color: #333;
   transform: translateY(-10px);
   transition: all 0.2s;
+}
+
+.info__list {
+  justify-content: center;
 }
