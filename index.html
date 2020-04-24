@@ -16,7 +16,7 @@
         <div class="avatar">
           <img class="avatar__img" src="public/img/avatar_default.png" />
           <div class="avatar__img--secondary">
-            <img src="public/img/avatar_spiderman.png" />
+            <img id="hover-image" src="public/img/avatar_default.png" />
           </div>
         </div>
       </div>
@@ -65,4 +65,22 @@
       </div>
     </section>
   </body>
+
+  <script>
+    let hoverImage = document.getElementById("hover-image");
+    let hoverCount = 0;
+    let avatarOptions = ['spiderman', 'batman', 'america'];
+
+    hoverImage.addEventListener("mouseenter", function( event ) { 
+      event.target.src = `public/img/avatar_${avatarOptions[hoverCount]}.png`;
+      hoverCount++;
+
+      if (hoverCount > avatarOptions.length - 1)
+        hoverCount = 0;
+    }, false);
+
+    hoverImage.addEventListener("mouseleave", function( event ) { 
+      event.target.src = 'public/img/avatar_default.png';
+    }, false);
+  </script>
 </html>
