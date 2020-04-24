@@ -93,7 +93,6 @@ ul {
 }
 
 .info__item:hover {
-  color: #777;
   cursor: default;
 }
 
@@ -115,11 +114,11 @@ ul {
 }
 
 .contact__item a {
-  color: #999;
+  color: #555;
 }
 
 .contact__item a:hover i {
-  color: #333;
+  color: #222;
   transform: translateY(-10px);
   transition: all 0.2s;
 }
