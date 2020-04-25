@@ -1,2 +1,2 @@
 # mathvalenza.github.io
-just testing
+Just a [personal static web page made with HTML and CSS](https://mathvalenza.github.io).
