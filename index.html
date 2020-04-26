@@ -71,13 +71,15 @@
     let hoverCount = 0;
     let avatarOptions = ['spiderman', 'batman', 'america'];
 
-    hoverImage.addEventListener("mouseenter", function( event ) { 
+    const changeImage = function( event ) { 
       event.target.src = `public/img/avatar_${avatarOptions[hoverCount]}.png`;
       hoverCount++;
 
       if (hoverCount > avatarOptions.length - 1)
         hoverCount = 0;
-    }, false);
+    }
+
+    hoverImage.addEventListener("mouseenter", changeImage, false);
 
     hoverImage.addEventListener("mouseleave", function( event ) { 
       event.target.src = 'public/img/avatar_default.png';
