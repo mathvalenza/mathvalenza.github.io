@@ -4,7 +4,7 @@
     <title>mathvalenza</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <link rel="stylesheet" href="public/css/main.css" />
     <link rel="stylesheet" href="public/css/all.css" />
     <link rel="stylesheet" href="public/css/normalize.css" />
@@ -20,21 +20,11 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="info">
-          <ul class="info__list">
-            <li class="info__item">
-              Matheus Vinícius Valenza
-            </li>
-            |
-            <li class="info__item">
-              Computer Scientist
-            </li>
-            |
-            <li class="info__item">
-              FullStack Web Developer
-            </li>
-          </ul>
+      <div class="info">
+        <div class="title">
+          Matheus Vinícius Valenza
+          <span class="title__divisor">|</span> Computer Scientist
+          <span class="title__divisor">|</span> Full Stack Web Developer
         </div>
       </div>
       <div class="container">
@@ -46,17 +36,26 @@
               </a>
             </li>
             <li class="contact__item">
-              <a title="Linkedin" href="https://www.linkedin.com/in/matheus-valenza">
+              <a
+                title="Linkedin"
+                href="https://www.linkedin.com/in/matheus-valenza"
+              >
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
             <li class="contact__item">
-              <a title="Stack Overflow" href="https://stackoverflow.com/users/9510675/matheus-valenza">
+              <a
+                title="Stack Overflow"
+                href="https://stackoverflow.com/users/9510675/matheus-valenza"
+              >
                 <i class="fab fa-stack-overflow"></i>
               </a>
             </li>
             <li class="contact__item">
-              <a title="News" href="https://www.udesc.br/faed/noticia/pesquisa_desenvolvida_na_udesc_joinville_e_divulgada_em_revista_internacional_de_tecnologia">
+              <a
+                title="News"
+                href="https://www.udesc.br/faed/noticia/pesquisa_desenvolvida_na_udesc_joinville_e_divulgada_em_revista_internacional_de_tecnologia"
+              >
                 <i class="fas fa-rss"></i>
               </a>
             </li>
@@ -67,22 +66,25 @@
   </body>
 
   <script>
-    let hoverImage = document.getElementById("hover-image");
+    let hoverImage = document.getElementById('hover-image');
     let hoverCount = 0;
     let avatarOptions = ['spiderman', 'batman', 'america'];
 
-    const changeImage = function( event ) { 
+    const changeImage = function (event) {
       event.target.src = `public/img/avatar_${avatarOptions[hoverCount]}.png`;
       hoverCount++;
 
-      if (hoverCount > avatarOptions.length - 1)
-        hoverCount = 0;
-    }
+      if (hoverCount > avatarOptions.length - 1) hoverCount = 0;
+    };
 
-    hoverImage.addEventListener("mouseenter", changeImage, false);
+    hoverImage.addEventListener('mouseenter', changeImage, false);
 
-    hoverImage.addEventListener("mouseleave", function( event ) { 
-      event.target.src = 'public/img/avatar_default.png';
-    }, false);
+    hoverImage.addEventListener(
+      'mouseleave',
+      function (event) {
+        event.target.src = 'public/img/avatar_default.png';
+      },
+      false
+    );
   </script>
 </html>
